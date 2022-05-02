@@ -1,0 +1,26 @@
+.pic{
+
+    height: 600px;
+ 
+}
+.c{
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+}
+.cf{
+
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    font-size: 30px;
+}
+.b{
+
+    align-content: center;
+
+}
