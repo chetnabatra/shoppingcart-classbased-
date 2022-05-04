@@ -1,26 +1,90 @@
-.pic{
-
-    height: 600px;
- 
+.pic {
+  height: 600px;
+  opacity: 0.6;
 }
-.c{
-    color: black;
-    text-align: center;
-    font-weight: 300;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: bold;
+.c {
+  color: black;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: bold;
 }
-.cf{
-
-    color: black;
-    text-align: center;
-    font-weight: 300;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: bold;
-    font-size: 30px;
+.cf {
+  text-align: center;
+  font-weight: 300;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: bold;
+  font-size: 25px;
 }
-.b{
+.b {
+  align-content: center;
+}
+.navbar-brand {
+  margin-top: 10px;
 
-    align-content: center;
+  font-family: "Lato", sans-serif;
 
+  font-size: 20px;
+  margin: 0px;
+}
+.navbar-custom {
+  background-color: "#A933FF";
+}
+.navbar {
+  padding-top: 0px;
+  margin-bottom: 200px !important;
+}
+.pro {
+  margin-top: 70px !important;
+}
+.title {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+}
+.price {
+  color: yellowgreen;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.form-control {
+  color: black;
+  scroll-behavior: smooth;
+  background: rgba(137, 235, 183, 0.3);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.form-control:hover {
+  background-color: rgba(137, 235, 183, 0.3);
+}
+
+option {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: green;
+  background-color: white;
+}
+select {
+  border: 0;
+  color: #eee;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 10px;
+  width: 378px;
+  *width: 350px;
+  *background: #58b14c;
+  -webkit-appearance: none;
+}
+select:focus {
+  border-color: gray;
+  outline: none;
+  box-shadow: 0 0 2px gray;
+}
+.nav-item {
+  font-size: 15px;
+  color: azure;
 }

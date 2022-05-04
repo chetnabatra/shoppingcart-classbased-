@@ -1,37 +1,32 @@
-import React, { Component } from "react";
-
-import Products from "./components/Products";
-import Filter from "./components/Filter";
-import Basket from "./components/Basket";
-
+import React, { Component, lazy, Suspense } from "react";
 import "./App.css";
 
-import Home from "./components/Home";
 import Header from "./components/Navbar";
-import {Routes,Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
+const Products = lazy(() => import("./components/Products"));
+const Home = lazy(() => import("./components/Home"));
+const Basket = lazy(() => import("./components/Basket"));
+
 class App extends Component {
   render() {
     return (
       <>
-       
-     <Header />
-       
-     <Routes>
-     <Route path='/' element={<Home />} />
+        <Suspense
+          fallback={
+            <div>
+              <h1>Loading...</h1>
+            </div>
+          }
+        >
+          <Header />
 
-   
-     <Route path='/Filter' element={<Filter />} />
-             
-              <Route path='/Product' element={<Products />} />       
-              <Route path='/Basket' element={<Basket />} />
-         
-     
-     
-      
-      
-       
-        
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Product" element={<Products />} />
+            <Route path="/Basket" element={<Basket />} />
+          </Routes>
+        </Suspense>
       </>
     );
   }

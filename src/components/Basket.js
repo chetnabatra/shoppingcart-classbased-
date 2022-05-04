@@ -7,12 +7,12 @@ class Basket extends Component {
     const { cartItems } = this.props;
 
     return (
-      <div className="alert alert-info">
+      <div className=" pro alert alert-info">
         {cartItems.length === 0 ? (
-          "Basket is empty"
+          <h4>Basket is empty</h4>
         ) : (
           <div>
-            You have {cartItems.length} items in the basket. <hr />
+            <h4>You have {cartItems.length} items in the basket. </h4> <hr />
           </div>
         )}
         {cartItems.length > 0 && (
@@ -44,7 +44,7 @@ class Basket extends Component {
             </b>
             <button
               onClick={() => alert("Todo: Implement checkout page.")}
-              className="btn btn-primary"
+              className="btn btn-success"
             >
               checkout
             </button>
