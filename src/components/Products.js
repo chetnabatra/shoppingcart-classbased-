@@ -13,8 +13,8 @@ class Products extends Component {
   }
   render() {
     const productItems = this.props.products.map((product) => (
-      <div className="col-md-4" key={product.id}>
-        <div className="thumbnail text-center">
+      <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12" key={product.id}>
+        <div className="thumbnail text-center ">
           <a
             href={`#${product.id}`}
             onClick={(e) => this.props.addToCart(this.props.cartItems, product)}
@@ -34,7 +34,7 @@ class Products extends Component {
     ));
 
     return (
-      <div className="row pro">
+      <div className="row p">
         <div className="col-md-9">
           <Filter />
           <hr />

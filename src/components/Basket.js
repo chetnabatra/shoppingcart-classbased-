@@ -7,7 +7,7 @@ class Basket extends Component {
     const { cartItems } = this.props;
 
     return (
-      <div className=" pro alert alert-info">
+      <div className=" p alert alert-info">
         {cartItems.length === 0 ? (
           <h4>Basket is empty</h4>
         ) : (

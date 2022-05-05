@@ -1,6 +1,18 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
 .pic {
-  height: 600px;
+  
+  height: 60rem;
+
   opacity: 0.6;
+  
+  
+  
 }
 .c {
   color: black;
@@ -8,13 +20,14 @@
   font-weight: 300;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: bold;
+  font-size: 4vw;
 }
 .cf {
   text-align: center;
   font-weight: 300;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: bold;
-  font-size: 25px;
+  font-size: 3vw;
 }
 .b {
   align-content: center;
@@ -32,10 +45,9 @@
 }
 .navbar {
   padding-top: 0px;
-  margin-bottom: 200px !important;
-}
-.pro {
-  margin-top: 70px !important;
+  margin-bottom: 0; 
+  overflow: 'hidden'
+  
 }
 .title {
   text-decoration: none;
@@ -87,4 +99,23 @@ select:focus {
 .nav-item {
   font-size: 15px;
   color: azure;
+}
+
+.p{
+  margin-top: 50px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.navbar{
+  position:fixed;
+  width:100%;
+  z-index: 1000000;
+  top:0;
+}
+.t{
+  font-size: 2rem;
 }

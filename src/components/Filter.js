@@ -5,7 +5,7 @@ class Filter extends Component {
   render() {
     return (
       <div className="row">
-        <div className=" cf col-md-4">{`${this.props.filteredProducts.length} products found.`}</div>
+        <div className=" t col-lg-3 col-md-6 col-sm-12 col-xs-12">{`${this.props.filteredProducts.length} products found.`}</div>
         <div className="col-md-4">
           <label>
             Order by

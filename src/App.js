@@ -1,6 +1,7 @@
 import React, { Component, lazy, Suspense } from "react";
 import "./App.css";
 
+
 import Header from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 
